@@ -1,0 +1,47 @@
+Project_2 is due one week after Porject_1(due on Wednesday 8/2 by 1 pm)
+Bank class additions: 
+
+writeToFile(PrintWriter pw){
+	
+	for(/* all BankAccounts */){
+		accounts[i].writeToFile(pw);
+		Print like this: " Adolfas|Lapsys|Address|balance|username|pin thats coded "
+	}
+}
+readFrom(Scanner s){
+	while(s.hasNextLine()){
+		BankAccount b = new BankAccount(s);//create default constructor so this is empty
+	}		
+}
+
+BankAccount readFromFile(Scanner s){
+	String[] arr = s.nextLine().split("|");
+}
+pin : dont store the actual pin, store some encoded version of the pin
+	Replace pin with hashOfPIN
+		private String PIN;//remove!!!
+		private String hashOfPIN;
+ArrayList<BankAcount> accounts; equivalent to c++ vectors{
+	grow method isnt needed any more bc arrayList takes care of it
+}
+
+menu:{
+
+	1. Log In
+	2. Sign Up
+	3. Terminate Account
+	4. Save Bank to a file
+	5. Load bank from file
+	6. Exit
+	
+
+}
+
+BankMenu additions {
+	1. writetoFileMenu(bank) --> 
+	2. readFromFileMenu(bank) --> ask which file user wants to read from
+	3. exit
+}
+
+
+™££€
